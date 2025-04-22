@@ -1,0 +1,305 @@
+body {
+    background-color: #f5f7fa;
+    margin: 0;
+}
+
+.admin-user-list-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 80px 20px 20px;
+}
+
+.admin-user-list-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 2px solid #2196f3;
+    padding-bottom: 10px;
+}
+
+.admin-user-list-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.admin-user-list-table thead {
+    background-color: #2196f3;
+    color: white;
+}
+
+.admin-user-list-table th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.admin-user-list-table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.admin-user-list-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.admin-user-list-table tbody tr:hover {
+    background-color: #e6f2ff;
+}
+
+.admin-user-list-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #333;
+}
+
+.admin-user-list-table td a {
+    color: #2196f3;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.admin-user-list-table td a:hover {
+    color: #1976d2;
+    text-decoration: underline;
+}
+
+.admin-user-list-table td .edit-button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    background-color: #2196f3;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.admin-user-list-table td .edit-button:hover {
+    background-color: #1976d2;
+}
+
+.admin-user-list-table td .deactivate-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.admin-user-list-table td .deactivate-button:hover {
+    background-color: #c82333;
+}
+
+.admin-user-list-table td .reactivate-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.admin-user-list-table td .reactivate-button:hover {
+    background-color: #218838;
+}
+
+.edit-button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    background-color: #2196f3;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.edit-button:hover {
+    background-color: #1976d2;
+}
+
+.deactivate-button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    background-color: #dc3545;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.deactivate-button:hover {
+    background-color: #c82333;
+}
+
+.reactivate-button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.reactivate-button:hover {
+    background-color: #218838;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: #2196f3;
+    box-shadow: 0 4px 8px rgba(33, 150, 243, 0.2);
+}
+
+.tab-navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-navigation button {
+    padding: 10px 15px;
+    margin: 0 10px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.tab-navigation button:hover {
+    background-color: #e6f2ff;
+    border-color: #2196f3;
+}
+
+.tab-navigation button.active {
+    background-color: #2196f3;
+    color: white;
+    border-color: #2196f3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-count {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+.loading-container, .error-container {
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+.error-container {
+    color: #dc3545;
+}
+
+@media screen and (max-width: 768px) {
+    .admin-user-list-container {
+        padding-top: 120px;
+    }
+
+    .admin-user-list-table {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .admin-user-list-table thead {
+        display: none;
+    }
+
+    .admin-user-list-table, 
+    .admin-user-list-table tbody, 
+    .admin-user-list-table tr, 
+    .admin-user-list-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .admin-user-list-table tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .admin-user-list-table td {
+        text-align: right;
+        padding: 10px 15px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .admin-user-list-table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .admin-user-list-table td:last-child {
+        border-bottom: none;
+    }
+
+    .search-container {
+        padding: 0 15px;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .tab-navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-navigation button {
+        margin: 5px 0;
+        width: 100%;
+        max-width: 300px;
+    }
+}

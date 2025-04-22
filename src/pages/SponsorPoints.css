@@ -1,0 +1,244 @@
+.sponsor-points-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    max-width: 700px;
+    margin: 120px auto 50px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor-points-container h2 {
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.sponsor-points-container h3 {
+    color: #555;
+    margin: 0 0 15px;
+    font-size: 18px;
+}
+
+.success-message {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 12px;
+    border-radius: 4px;
+    margin: 15px 0;
+    border-left: 4px solid #4caf50;
+    width: 100%;
+}
+
+.error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 12px;
+    border-radius: 4px;
+    margin: 15px 0;
+    border-left: 4px solid #f44336;
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.point-value-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.point-value-update {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.point-value-update input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.driver-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.driver-selection label {
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+}
+
+.driver-selection select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.driver-selection select:focus {
+    outline: none;
+    border-color: #2196f3;
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2);
+}
+
+.transaction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea,
+.add-preset-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.primary-button {
+    background-color: #2196f3;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #1976d2;
+}
+
+.danger-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.danger-button:hover {
+    background-color: #d32f2f;
+}
+
+.presets-section {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.presets-section h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.presets-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.preset-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border-left: 4px solid #2196f3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.preset-item span {
+    flex: 1;
+}
+
+.preset-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.preset-actions button {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.add-preset-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.add-preset-form input {
+    flex: 1;
+    min-width: 120px;
+}
+
+@media (max-width: 600px) {
+    .point-value-update,
+    .add-preset-form {
+        flex-direction: column;
+    }
+    
+    .preset-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .preset-actions {
+        width: 100%;
+    }
+    
+    .preset-actions button {
+        flex: 1;
+    }
+}

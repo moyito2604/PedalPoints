@@ -1,0 +1,157 @@
+.sponsor-edit-user-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor-edit-user-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.sponsor-edit-user-container .form-group {
+    margin-bottom: 15px;
+}
+
+.sponsor-edit-user-container .form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.sponsor-edit-user-container .form-row .form-group {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.sponsor-edit-user-container .form-input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	background-color: #fff;
+	color: #333;
+	outline: none;
+}
+  
+.sponsor-edit-user-container .form-input:focus {
+	border-color: #007bff;
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.sponsor-edit-user-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.sponsor-edit-user-container input,
+.sponsor-edit-user-container textarea,
+.sponsor-edit-user-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.sponsor-edit-user-container input:focus,
+.sponsor-edit-user-container textarea:focus,
+.sponsor-edit-user-container select:focus {
+    border-color: #2196f3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.3);
+}
+
+.sponsor-edit-user-container .profile-picture-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sponsor-edit-user-container .profile-picture-preview {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.sponsor-edit-user-container .profile-picture-preview span {
+    color: #777;
+    font-size: 14px;
+}
+
+.sponsor-edit-user-container .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.sponsor-edit-user-container button {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.sponsor-edit-user-container button[type="submit"] {
+    background: #2196f3;
+    color: white;
+    margin-right: 10px;
+}
+
+.sponsor-edit-user-container button[type="submit"]:hover {
+    background: #1976d2;
+}
+
+.sponsor-edit-user-container button[type="button"] {
+    background: #ccc;
+    color: black;
+}
+
+.sponsor-edit-user-container button[type="button"]:hover {
+    background: #bbb;
+}
+
+.sponsor-edit-user-container .error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sponsor-edit-user-container .success-message {
+    color: green;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .sponsor-edit-user-container {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .sponsor-edit-user-container .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .sponsor-edit-user-container button {
+        padding: 10px;
+    }
+}

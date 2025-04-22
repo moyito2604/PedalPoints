@@ -1,0 +1,113 @@
+.admin-create-org-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 80px;
+    font-family: Arial, sans-serif;
+}
+
+.admin-create-org-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.admin-create-org-container form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-create-org-container .form-group {
+    margin-bottom: 20px;
+}
+
+.admin-create-org-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.admin-create-org-container .form-group input, 
+.admin-create-org-container .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.admin-create-org-container .form-actions {
+    margin-top: 30px;
+    /* Changed to row direction for side-by-side buttons */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.admin-create-org-container .error-message {
+    color: #d9534f;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.admin-create-org-container .success-message {
+    color: #10b981;
+    background-color: #dff0d8;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.admin-create-org-container .submit-button, .admin-create-org-container .cancel-button {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    /* Make buttons take equal width */
+    flex: 1;
+}
+
+.admin-create-org-container .submit-button {
+    background-color: #10b981;
+    color: white;
+}
+
+.admin-create-org-container .submit-button:hover {
+    background-color: #059669;
+}
+
+.admin-create-org-container .submit-button:disabled {
+    background-color: #aad8aa;
+    cursor: not-allowed;
+}
+
+.admin-create-org-container .cancel-button {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.admin-create-org-container .cancel-button:hover {
+    background-color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    .admin-create-org-container {
+        padding: 10px;
+    }
+    
+    .admin-create-org-container form {
+        padding: 15px;
+    }
+    
+    /* Stack buttons on mobile */
+    .admin-create-org-container .form-actions {
+        flex-direction: column;
+    }
+}

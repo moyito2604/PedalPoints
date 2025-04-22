@@ -1,0 +1,199 @@
+.sponsor-report-container {
+	max-width: 1200px;
+	margin: 120px auto;
+	padding: 0 20px;
+}
+
+.sponsor-report-container .report-title {
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.sponsor-report-container .report-tabs {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	flex-wrap: wrap;
+}
+
+.sponsor-report-container .tab-button {
+	padding: 10px 20px;
+	margin: 0 5px 10px;
+	background-color: #f1f1f1;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: 500;
+	transition: all 0.3s;
+}
+
+.sponsor-report-container .tab-button:hover {
+	background-color: #ddd;
+}
+
+.sponsor-report-container .tab-button.active {
+	background-color: #3498db;
+	color: white;
+}
+
+.sponsor-report-container .report-filters {
+	margin-bottom: 20px;
+}
+
+.sponsor-report-container .search-container {
+	width: 100%;
+}
+
+.sponsor-report-container .search-input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.sponsor-report-container .sponsor-report-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor-report-container .sponsor-report-table th,
+.sponsor-report-container .sponsor-report-table td {
+	border: 1px solid #ddd;
+	padding: 12px;
+	text-align: left;
+}
+
+.sponsor-report-container .sponsor-report-table th {
+	background-color: #f2f2f2;
+	font-weight: bold;
+	top: 0;
+}
+
+.sponsor-report-container .sponsor-report-table tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+.sponsor-report-container .sponsor-report-table tr:hover {
+	background-color: #f1f1f1;
+}
+
+.sponsor-report-container .no-data {
+	text-align: center;
+	padding: 30px;
+	color: #999;
+	font-style: italic;
+}
+
+.sponsor-report-container .points-report-placeholder {
+	background-color: #f8f9fa;
+	border: 1px dashed #ccc;
+	border-radius: 8px;
+	padding: 30px;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.download-button {
+	background-color: #10b981;
+	color: white;
+	border: none;
+	padding: 8px 16px;
+	margin-left: 700px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: 500;
+	transition: background-color 0.3s;
+}
+  
+.download-button:hover {
+	background-color: #059669;
+}
+
+.download-button:disabled {
+	background-color: #cccccc;
+	cursor: not-allowed;
+}
+
+.report-selector {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.report-dropdown {
+	padding: 8px 12px;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: white;
+	min-width: 200px;
+	cursor: pointer;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+	background-repeat: no-repeat;
+	background-position: right 8px center;
+	background-size: 16px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.report-dropdown:hover {
+	border-color: #aaa;
+}
+
+.report-dropdown:focus {
+	outline: none;
+	border-color: #4a90e2;
+	box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+@media (max-width: 768px) {
+	.sponsor-report-container .sponsor-report-table {
+		display: block;
+		overflow-x: auto;
+	}
+
+	.sponsor-report-container .sponsor-report-table thead,
+	.sponsor-report-container .sponsor-report-table tbody,
+	.sponsor-report-container .sponsor-report-table th,
+	.sponsor-report-container .sponsor-report-table td,
+	.sponsor-report-container .sponsor-report-table tr {
+		display: block;
+	}
+
+	.sponsor-report-container .sponsor-report-table thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	.sponsor-report-container .sponsor-report-table tr {
+		border: 1px solid #ccc;
+		margin-bottom: 10px;
+	}
+
+	.sponsor-report-container .sponsor-report-table td {
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+	}
+
+	.sponsor-report-container .sponsor-report-table td:before {
+		position: absolute;
+		top: 12px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+		font-weight: bold;
+		content: attr(data-label);
+	}
+}

@@ -1,0 +1,240 @@
+.user-profile-container {
+    text-align: center;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Arial, sans-serif;
+    padding-top: 110px;
+    color: #333;
+}
+
+.profile-header {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.profile-content {
+    width: 90%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.profile-picture-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ccc;
+}
+
+.profile-placeholder {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #666;
+    border: 4px solid #ccc;
+}
+
+.upload-button {
+    margin-top: 8px;
+    padding: 6px 14px;
+    background-color: #e0e0e0; /* Softer gray instead of bright blue */
+    color: #333; /* Dark gray text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #d6d6d6; /* Slightly darker gray on hover */
+}
+
+/* Profile Information */
+.profile-info p {
+    font-size: 18px;
+    margin: 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-info p:last-child {
+    border-bottom: none;
+}
+
+.application-statuses-section {
+    margin-bottom: 40px;
+}
+
+.editable-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+/* Create a container for the text content */
+.editable-field-content {
+    flex: 1;
+    text-align: left;
+    overflow: hidden; /* Prevents long content from pushing icon */
+    text-overflow: ellipsis; /* Adds ellipsis for overflowing text */
+}
+
+.edit-icon {
+    margin-left: 10px; /* Adds spacing between text and icon */
+    font-size: 16px;
+    color: #888;
+    transition: color 0.2s ease;
+    flex-shrink: 0; /* Prevents icon from shrinking */
+}
+
+.editable-field:hover .edit-icon {
+    color: #555;
+}
+
+.dropdown-menu {
+    background-color: #333; /* Dark background for contrast */
+    color: white; /* Change text color to white */
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+.dropdown-item {
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+}
+
+.dropdown-item p {
+    color: white; /* Ensure all text inside notifications is white */
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.notifications-dropdown {
+    float: right;
+}
+
+.notifications-dropdown-menu {
+    max-width: 200px;
+}
+
+.notification-alert {
+    color: red;
+    font-weight: bold;
+}
+
+/* Add a delete button style */
+.notification-delete-btn {
+    background-color: #ff4d4d; /* Red color for delete */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.notification-delete-btn:hover {
+    background-color: #e60000;
+}
+
+/* Notification Section Styling - Simplified */
+.send-notification-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.send-notification-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: left;
+}
+
+.send-notification-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.send-notification-section form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.send-notification-section label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.send-notification-section input[type="text"],
+.send-notification-section textarea,
+.send-notification-section select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.send-notification-section textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.send-notification-section .recipient-selection {
+    margin-bottom: -10px;
+}
+
+.send-notification-section div:has(input[type="checkbox"]) {
+    flex-direction: row;
+    align-items: center;
+}
+
+.send-notification-section input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.send-notification-section button[type="submit"] {
+    margin-bottom: 40px;
+    padding: 8px 16px;
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-start;
+    transition: background-color 0.2s;
+}
+
+.send-notification-section button[type="submit"]:hover {
+    background-color: #d6d6d6;
+}
